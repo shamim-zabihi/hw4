@@ -93,7 +93,71 @@
                 تأیید همکاری در این صفحه انجام نمی‌شود.
             </p>
         </section>
+<section class="form-card">
+    
+    <form action="#" method="POST">
+        <h2 class="form-title">درخواست همکاری</h2>
 
+        <div class="form-group">
+            <label for="fullname">نام و نام خانوادگی (اجباری)</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">ایمیل (اجباری)</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">تلفن (اختیاری)</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+
+        <fieldset class="custom-fieldset">
+            <legend>بازه ترجیحی (اجباری؛ دقیقاً یک مورد)</legend>
+            <label class="choice-label"><input type="radio" name="time_preference" value="morning" required> صبح</label>
+            <label class="choice-label"><input type="radio" name="time_preference" value="evening" required> عصر</label>
+        </fieldset>
+
+        <fieldset class="custom-fieldset">
+            <legend>علاقه به فعالیت‌ها (اختیاری؛ صفر تا سه مورد)</legend>
+            <label class="choice-label"><input type="checkbox" name="interests" value="teaching"> آموزش</label>
+            <label class="choice-label"><input type="checkbox" name="interests" value="event"> رویداد</label>
+            <label class="choice-label"><input type="checkbox" name="interests" value="library"> کتابخانه</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="experience">سطح تجربه (اجباری)</label>
+            <select id="experience" name="experience" required>
+                <option value="" disabled selected>سطح تجربه را انتخاب کنید</option>
+                <option value="beginner">تازه‌کار</option>
+                <option value="intermediate">تجربه محدود</option>
+                <option value="expert">باتجربه</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="description">توضیح (اختیاری)</label>
+            <textarea id="description" name="description" rows="4" maxlength="300"></textarea>
+            <span class="char-limit">حداکثر ۳۰۰ نویسه (تایپ یا paste)</span>
+        </div>
+
+        <div class="rules-container">
+            <label class="rules-checkbox">
+                <input type="checkbox" name="rules" required>
+                <span>قوانین همکاری را می‌پذیرم (اجباری)</span>
+            </label>
+            <div class="rules-box">
+                <p>احترام به مراجعه کنندگان، حفظ اطلاعات شخصی آنان و هماهنگی با مسئول فعالیت پیش از حضور لازم است.</p>
+            </div>
+        </div>
+
+        <div class="submit-wrapper">
+            <button type="submit" class="submit-btn">ارسال درخواست آزمایشی</button>
+        </div>
+
+    </form>
+</section>
     </div>
 
 </body>

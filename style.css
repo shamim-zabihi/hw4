@@ -4,8 +4,9 @@
     padding: 0;
 }
 
+
 body {
-    font-family: "Vazirmatn" Tahoma, Arial, sans-serif;
+    font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
     background-color: #f3f4f6;
     color: #333;
     line-height: 1.6;
@@ -30,7 +31,6 @@ body {
 .brand {
     color: #ffffff;
     font-size: 30px;
-
 }
 
 .nav-links {
@@ -41,6 +41,7 @@ body {
 .nav-links a {
     color: #ffffff;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .nav-links a:hover {
@@ -48,7 +49,8 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: 95%;
+    max-width: 1400px;
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -78,7 +80,6 @@ body {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     margin-bottom: 24px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .section-title {
@@ -111,41 +112,38 @@ body {
     color: #555;
 }
 
-
 .schedule-card {
     background-color: #ffffff;
     padding: 25px;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     margin-bottom: 24px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .section-subtitle {
     font-size: 18px;
     color: black;
-    margin-top: -15px; 
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
 .time-table {
     width: 100%;
-    border-collapse: collapse; 
+    border-collapse: collapse;
     margin-bottom: 15px;
     font-size: 18px;
-    
 }
 
-.time-table th, 
+.time-table th,
 .time-table td {
-    border: 1px solid #94a3b8; 
+    border: 1px solid #94a3b8;
     padding: 12px 10px;
     text-align: right;
     color: #333;
 }
 
 .time-table th {
-    background-color: #DBE6F1; 
+    background-color: #DBE6F1;
     font-weight: bold;
     color: #1B314D;
 }
@@ -162,8 +160,9 @@ body {
     width: 100%;
     overflow-x: auto;
 }
+
 .form-card {
-    background-color: white; 
+    background-color: white;
     padding: 30px;
     border: 1px solid #d1d5db;
     border-radius: 6px;
@@ -183,8 +182,7 @@ body {
     flex-direction: column;
 }
 
-
-.form-group > label {
+.form-group>label {
     font-size: 18px;
     color: #374151;
     margin-bottom: 8px;
@@ -243,8 +241,8 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: #374151;
-    padding: 0 5px; 
-    margin-right: 10px; 
+    padding: 0 5px;
+    margin-right: 10px;
 }
 
 .choice-label {
@@ -261,7 +259,6 @@ body {
     height: 16px;
     cursor: pointer;
 }
-
 
 .rules-container {
     margin-bottom: 25px;
@@ -283,10 +280,9 @@ body {
     height: 16px;
 }
 
-
 .rules-box {
     border: 1px solid #DFC8A0;
-    border-right: 3px solid #B07929; 
+    border-right: 3px solid #B07929;
     padding: 15px;
     border-radius: 4px;
     background-color: #F7F1E6;
@@ -306,7 +302,7 @@ body {
 }
 
 .submit-btn {
-    background-color: #2b4b7c; 
+    background-color: #2b4b7c;
     color: #ffffff;
     border: none;
     padding: 12px 30px;
@@ -319,4 +315,93 @@ body {
 
 .submit-btn:hover {
     background-color: #1e355a;
+}
+
+.site-footer {
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 24px;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 20px;
+    color: #1B314D;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-link {
+    font-size: 18px;
+    color: black;
+    text-decoration: underline;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #d1d5db;
+    margin: 25px 0;
+}
+
+.footer-text {
+    text-align: right;
+    font-size: 18px;
+    color: #6b7280;
+}
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content-side,
+.form-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.content-side>section,
+.form-side>section {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .main-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .main-layout {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .content-side {
+        order: 1;
+        width: 100%;
+    }
+
+    .form-side {
+        order: 2;
+        width: 100%;
+        max-width: 700px;
+    }
+
+
 }
